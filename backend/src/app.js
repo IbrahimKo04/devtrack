@@ -7,7 +7,10 @@ const releaseRoutes = require ("./routes/releases.routes")
 const logger = require("./middleware/logger.middleware")
 const errorHandler = require("./middleware/error.middleware")
 
-app.use(cors())
+app.use(
+    cors({
+        origin:"*",
+    }))
 app.use(express.json())
 app.use("/api/issues", issueRoutes)
 app.use("/api/releases", releaseRoutes)

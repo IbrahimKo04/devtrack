@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "jest": {
-  "testEnvironment": "node"
-},
-
+    "testEnvironment": "node"
+  },
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
